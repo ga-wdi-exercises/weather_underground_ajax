@@ -5,7 +5,7 @@ $("button").on("click", () => {
     type: "get",
     dataType:"json"
   }).done((response) => {
-    console.log(response.current_observation.temp_f)
+    console.log(response)
   }).fail(() => {
     console.log("Ajax request fails")
   }).always(() => {
